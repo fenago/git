@@ -16,6 +16,9 @@ Let's get started.
 #### Lab Environment
 There is no requirement for any setup.
 
+Run the following command in **terminal**:
+`cd ~/work/git/1/`
+
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/`

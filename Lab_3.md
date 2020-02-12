@@ -14,6 +14,9 @@ Let's get started.
 #### Lab Environment
 There is no requirement for any setup.
 
+Run the following command in **terminal**:
+`cd ~/work/git/3/ && mv git .git`
+
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/`
@@ -45,13 +48,26 @@ The git push command is followed by two parameters. The first parameter is the f
 
 Push the commits in the master branch to the origin remote.
 
+**Solution**
 
-### Step 2 - Git Push
 `git push origin master`
 
 
 ### Step 3 - Git Pull
 Where git push allows you to push your changes to a remote repository, git pull works in the reverse fashion. git pull allows you to sync changes from a remote repository into your local version.
+
+Let's make some change from another folder and push them to remote. Run following remote in **terminal 2**:
+
+```
+cd ~/work/git/duplicate/ && mv git .git
+git remote add origin /home/jovyan/work/git/remote-project/1
+git pull
+
+echo "new file" >> newfile.txt
+git add newfile.txt && git commit -m "added newfile.txt #1234"
+git push
+
+```
 
 The changes from the remote repository are automatically merge into the branch you're currently working on.
 
@@ -62,6 +78,7 @@ In the next step we'll explore what changes have been made.
 
 **Solution**
 
+Run the following command in **terminal 1**:
 `git pull origin master`
 
 ### Step 4 - Git Log
