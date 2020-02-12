@@ -84,7 +84,7 @@ Run the following command in **terminal 1**:
 ### Step 4 - Git Log
 As described in the previous scenario you can use the git log command to see the history of the repository. The git show command will allow you to view the changes made in each commit.
 
-In this example, the output from git log shows a new commit by "DifferentUser@JoinScrapbook.com" with the message "Fix for Bug #1234". The output of git show highlights the new lines added to the file in green.
+In this example, the output from git log shows a new commit with the message "added newfile.txt #1234". The output of git show highlights the new lines added to the file in green.
 
 **Protip**
 
@@ -92,7 +92,7 @@ Use the command `git log --grep="#1234"` to find all the commits containing **#1
 
 
 ### Step 5 - Git Fetch
-The command git pull is a combination of two different commands, git fetch and git merge. Fetch downloads the changes from the remote repository into a separate branch named remotes/<remote-name>/<remote-branch-name>. The branch can be accessed using git checkout.
+The command git pull is a combination of two different commands, git fetch and git merge. Fetch downloads the changes from the remote repository into a separate branch named **remotes/<remote-name>/<remote-branch-name>**. The branch can be accessed using git checkout.
 
 Using git fetch is a great way to review the changes without affecting your current branch. The naming format of branches is flexible enough that you can have multiple remotes and branches with the same name and easily switch between them.
 
@@ -109,7 +109,4 @@ You can view a list of all the remote branches using the command `git branch -r`
 `git fetch`
 
 `git checkout remotes/origin/master`
-
-
-
 

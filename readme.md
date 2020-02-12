@@ -16,7 +16,7 @@ Git is a distributed revision control and source code management system with an 
 
 ### Labs
 
-Labs for this course are available at path shared below. Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. 
+Labs for this course are available at path shared below.
 
 1. ##### Committing Files
 		* <host-ip>:<port>/lab/workspaces/lab1
