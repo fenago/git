@@ -21,7 +21,7 @@ Run the following command in **terminal**:
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-You can access lab at `<host-ip>:<port>/lab/workspaces/`
+You can access lab at `<host-ip>:<port>/lab/workspaces/lab1`
 
 ### Step 1 - Git Init
 To store a directory under version control you need to create a repository. With Git you initialise a repository in the top-level directory for a project.

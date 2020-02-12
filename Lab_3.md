@@ -19,7 +19,7 @@ Run the following command in **terminal**:
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-You can access lab at `<host-ip>:<port>/lab/workspaces/`
+You can access lab at `<host-ip>:<port>/lab/workspaces/lab3`
 
 ### Step 1 - Git Remote
 Remote repositories allow you to share changes from or to your repository. Remote locations are generally a build server, a team members machine or a centralised store such as Github.com. Remotes are added using the git remote command with a friendly name and the remote location, typically a HTTPS URL or a SSH connection for example https://github.com/OcelotUproar/ocelite.git or git@github.com:/OcelotUproar/ocelite.git.
@@ -61,11 +61,11 @@ Let's make some change from another folder and push them to remote. Run followin
 ```
 cd ~/work/git/duplicate/ && mv git .git
 git remote add origin /home/jovyan/work/git/remote-project/1
-git pull
+git pull origin master
 
 echo "new file" >> newfile.txt
 git add newfile.txt && git commit -m "added newfile.txt #1234"
-git push
+git push origin master
 
 ```
 
@@ -81,6 +81,9 @@ In the next step we'll explore what changes have been made.
 Run the following command in **terminal 1**:
 `git pull origin master`
 
+To save commit message and exit Vim press `esc` key then `:wq`.
+
+
 ### Step 4 - Git Log
 As described in the previous scenario you can use the git log command to see the history of the repository. The git show command will allow you to view the changes made in each commit.
 
@@ -88,7 +91,7 @@ In this example, the output from git log shows a new commit with the message "ad
 
 **Protip**
 
-Use the command `git log --grep="#1234"` to find all the commits containing **#1234**
+Use the command `git log --grep="#1234"` in **terminal 1** to find all the commits containing **#1234**
 
 
 ### Step 5 - Git Fetch

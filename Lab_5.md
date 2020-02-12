@@ -17,7 +17,7 @@ Run the following command in **terminal**:
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-You can access lab at `<host-ip>:<port>/lab/workspaces/`
+You can access lab at `<host-ip>:<port>/lab/workspaces/lab5`
 
 ## Git Diff Two Commits
 The git diff command is the simplest to compare what's changed between commits. It will output the differences between the two commits.

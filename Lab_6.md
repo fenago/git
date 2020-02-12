@@ -21,7 +21,7 @@ Run the following command in **terminal**:
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-You can access lab at `<host-ip>:<port>/lab/workspaces/`
+You can access lab at `<host-ip>:<port>/lab/workspaces/lab6`
 
 ## Step 1 - Amending Commit Messages
 Re-writing the repositories history is done using git **rebase** -interactive. By putting rebase into interactive mode you have more control over the changes you want to make. After launching into interactive mode you are given six commands to perform on each commit in the repository. By using the editor which opens, by default Vim, you define which actions you want to perform on each commit.

@@ -20,7 +20,7 @@ Run the following command in **terminal**:
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-You can access lab at `<host-ip>:<port>/lab/workspaces/`
+You can access lab at `<host-ip>:<port>/lab/workspaces/lab4`
 
 ### Step 1 - Git Checkout
 When working with Git, a common scenario is to undo changes in your working directory. The command git checkout will replace everything in the working directory to the last committed version.
