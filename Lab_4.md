@@ -58,7 +58,7 @@ Remove the changes from both the staging area and working directory using git re
 
 **Protip**
 
-Using HEAD will clear the state back to the last commit, using git reset --hard <commit-hash> allows you to go back to any commit state. Remember, HEAD is an alias for the last commit-hash of the branch.
+Using HEAD will clear the state back to the last commit, using `git reset --hard <commit-hash>` allows you to go back to any commit state. Remember, HEAD is an alias for the last commit-hash of the branch.
 
 **Solution**
 
@@ -88,11 +88,11 @@ To revert multiple commits at once we use the character `~` to mean minus. For e
 
 **Task**
 
-Use the command  `git revert HEAD...HEAD~2` to revert the commits between **HEAD** and **HEAD~2**.
+Use the command  **git revert HEAD...HEAD~2** to revert the commits between **HEAD** and **HEAD~2**.
 
 **Protip**
 
-You can use the command git log --oneline for a quick overview of the commit history.
+You can use the command `git log --oneline` for a quick overview of the commit history.
 
 **Solution**
 

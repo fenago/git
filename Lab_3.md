@@ -50,7 +50,12 @@ Push the commits in the master branch to the origin remote.
 
 **Solution**
 
-`git push origin master`
+```
+echo "first file" >> file.txt
+git add file.txt && git commit -m "added file.txt"
+
+git push origin master
+```
 
 
 ### Step 3 - Git Pull
@@ -80,9 +85,6 @@ In the next step we'll explore what changes have been made.
 
 Run the following command in **terminal 1**:
 `git pull origin master`
-
-To save commit message and exit Vim press `esc` key then `:wq`.
-
 
 ### Step 4 - Git Log
 As described in the previous scenario you can use the git log command to see the history of the repository. The git show command will allow you to view the changes made in each commit.
