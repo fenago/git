@@ -58,10 +58,10 @@ The changes from the remote repository are automatically merge into the branch y
 **Task**
 
 Pull the changes from the remote into your master branch.
-
 In the next step we'll explore what changes have been made.
 
-### Step 3 - Git Pull
+**Solution**
+
 `git pull origin master`
 
 ### Step 4 - Git Log
