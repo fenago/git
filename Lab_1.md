@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 
-# Committing Files
+# Lab: Committing Files
 In this scenario you'll learn how to initialise a new Git repository and commit files into version control.
 
 #### Tutorial Overview
@@ -25,17 +25,17 @@ To store a directory under version control you need to create a repository. With
 
 **Task**
 
-As this is a new project, a new repository needs to be created. Use the git init command to 
+As this is a new project, a new repository needs to be created. Use the `git init` command to 
 create a repository.
 
 **Protip**
 
-After initialising a repository, a new hidden subdirectory called .git is created. This subdirectory contains the metadata that Git uses to store it's information. If you're interested in the details then use the command line to explore the contents.
+After initialising a repository, a new hidden subdirectory called **.git** is created. This subdirectory contains the metadata that Git uses to store it's information. If you're interested in the details then use the command line to explore the contents.
 
 ### Step 2 - Git Status
 When a directory is part of a repository it is called a Working Directory. A working directory contains the latest downloaded version from the repository together with any changes that have yet to be committed. As you're working on a project, all changes are made in this working directory.
 
-You can view which files have changed between your working directory and what's been previously committed to the repository using the command git status.
+You can view which files have changed between your working directory and what's been previously committed to the repository using the command `git status`.
 
 The output of this command is called the "working tree status".
 
@@ -50,7 +50,7 @@ One of the key approaches with Git is that commits are focused, small and freque
 
 **Task**
 
-Use the command git add <file|directory> to add hello-world.js to the staging area.
+Use the command `git add <file|directory>` to add **hello-world.js** to the staging area.
 
 If you make an additional change after adding a file to the staging area then the change will not be reflected until you add the file again.
 
@@ -71,15 +71,15 @@ Only changes added to the staging area will be committed, any files in the worki
 
 **Task**
 
-Use git commit -m "<commit message>" to commit the staged file.
+Use `git commit -m "<commit message>"` to commit the staged file.
 
 **Protip**
 
-Each commit is assigned a SHA-1 hash which enables you to refer back to the commit in other commands.
+Each commit is assigned a **SHA-1** hash which enables you to refer back to the commit in other commands.
 
 **Solution**
 
-`git commit -m "Initial Hello World Commit"
+`git commit -m "Initial Hello World Commit"`
 
 ### Step 5 - Git Ignore
 Sometimes there are particular files or directories you never want to commit, such as local development configuration. To ignore these files you create a .gitignore file in the root of the repository.

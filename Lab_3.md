@@ -31,8 +31,8 @@ This environment has a remote repository location of `/home/jovyan/work/git/remo
 
 If you use git clone, discussed in a future scenario, then the location you're cloning from will be automatically added as a remote with the name origin.
 
+**Solution**
 
-### Step 1 - Git Remote
 `git remote add origin /home/jovyan/work/git/remote-project/1`
 
 

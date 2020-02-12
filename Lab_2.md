@@ -18,14 +18,14 @@ There is no requirement for any setup.
 You can access lab at `<host-ip>:<port>/lab/workspaces/`
 
 ### Step 1 - Git Status
-As discussed in the previous scenario `git status` allows us to view the changes in the working directory and staging area compared to the repository.
+`git status` allows us to view the changes in the working directory and staging area compared to the repository.
 
 Given the current repository running `git status` displays that a change has been made in our working directory to a previously committed file, committed.js, but has not yet been moved to the staging area.
 
 ### Step 2 - Git Diff
 The command `git diff` enables you to compare changes in the working directory against a previously committed version. By default the command compares the working directory and the HEAD commit.
 
-If you wish to compare against an older version then provide the commit hash as a parameter, for example git diff <commit>. Comparing against commits will output the changes for all of the files modified. If you want to compare the changes to a single file then provide the name as an argument such as git `diff committed.js`.
+If you wish to compare against an older version then provide the commit hash as a parameter, for example git diff <commit>. Comparing against commits will output the changes for all of the files modified. If you want to compare the changes to a single file then provide the name as an argument such as `git diff committed.js`.
 
 **Protip**
 
@@ -47,7 +47,7 @@ If you rename or delete files then you need to specify these files in the add co
 `git add committed.js`
 
 ### Step 4 - Staged Differences
-Once the changes are in the staging area they will not show in the output from git diff. By default, git diff will only compare the working directory and not the staging area.
+Once the changes are in the staging area they will not show in the output from `git diff` . By default, git diff will only compare the working directory and not the staging area.
 
 To compare the changes in the staging area against the previous commit you provide the staged parameter `git diff --staged`. This enables you to ensure that you have correctly staged all your changes.
 
@@ -57,10 +57,11 @@ The command git log allows you to view the history of the repository and the com
 
 **Protip**
 
-The format of the log output is very flexible. For example to output each commit on a single line the command is `git log --pretty=format:"%h %an %ar - %s"`. More details can be found in the git log man page accessed using `git log --help`
-
+The format of the log output is very flexible. For example to output each commit on a single line the command is `git log --pretty=format:"%h %an %ar - %s"`.
 
 ### Step 6 - Git Show
-While git log tells you the commit author and message, to view the changes made in the commit you need to use the the command git show
+While git log tells you the commit author and message, to view the changes made in the commit you need to use the the command:
 
-Like with other commands, by default it will show the changes in the HEAD commit. Use `git show <commit-hash>` to view older changes.
+`git show`
+
+Like with other commands, by default it will show the changes in the HEAD commit. Use `git show <commit-hash>` to view older changes. You can get commit-id from **git log** command output and use it with **git show** command.
