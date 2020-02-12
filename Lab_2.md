@@ -14,7 +14,7 @@ Let's get started.
 There is no requirement for any setup.
 
 Run the following command in **terminal**:
-`cd ~/work/git/3/ && mv git .git`
+`cd ~/work/git/2/ && mv git .git`
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 

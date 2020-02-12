@@ -12,6 +12,9 @@ In this scenario we'll explore the different ways you can find which commit intr
 #### Lab Environment
 There is no requirement for any setup.
 
+Run the following command in **terminal**:
+`cd ~/work/git/5/ && mv git .git`
+
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/`
@@ -31,7 +34,7 @@ While git log helps you see the commit messages but by default it does not outpu
 
 **Examples**
 
-To see the overview of the commits in a short view use the command git log --oneline
+To see the overview of the commits in a short view use the command `git log --oneline`
 
 To output the commit information with the differences of what changed you need to include the -p prompt such as `git log -p`
 
@@ -39,13 +42,13 @@ This will output the entire history. You can filter it with a number of differen
 
 If you know the time period then you can use a time period to between commits before a particular date using --since="2 weeks ago" and _--until="1 day ago".
 
-As with most Git commands, we can output a range of commits using HEAD...HEAD~1 as shown in the terminal.
+As with most Git commands, we can output a range of commits using **HEAD...HEAD~1** as shown in the terminal.
 
-Use the command git log --grep="Initial" will output all the commits which include the word "Initial" in their commit message. This is useful if you tag commits with bug-tracking numbers.
+Use the command `git log --grep="Initial"` will output all the commits which include the word "Initial" in their commit message. This is useful if you tag commits with bug-tracking numbers.
 
 **Protip**
 
-As we discussed in the merging scenario, your commit history can become noisy due to use merge notification commits. To remove them provide the argument -m with git log.
+Your commit history can become noisy due to use merge notification commits. To remove them provide the argument -m with git log.
 
 ### Git Bisect
 

@@ -16,19 +16,22 @@ You should only rebase commits that have not been shared with other people via p
 #### Lab Environment
 There is no requirement for any setup.
 
+Run the following command in **terminal**:
+`cd ~/work/git/6/ && mv git .git`
+
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/`
 
 ## Step 1 - Amending Commit Messages
-Re-writing the repositories history is done using git rebase -interactive. By putting rebase into interactive mode you have more control over the changes you want to make. After launching into interactive mode you are given six commands to perform on each commit in the repository. By using the editor which opens, by default Vim, you define which actions you want to perform on each commit.
+Re-writing the repositories history is done using git **rebase** -interactive. By putting rebase into interactive mode you have more control over the changes you want to make. After launching into interactive mode you are given six commands to perform on each commit in the repository. By using the editor which opens, by default Vim, you define which actions you want to perform on each commit.
 
 In this example we want to change the commit. To put it into this state we need to change the word "pick" next to the commit to match the action you want to perform based on the list shown in the Vim window, in this case "reword".
 
 In this example we want to change the commit message.
 
 ### Start
-To begin we need to enter Interactive Rebase mode using git rebase --interactive --root
+To begin we need to enter Interactive Rebase mode using `git rebase --interactive --root`
 
 **Select Interactive Mode**
 
@@ -105,10 +108,10 @@ The commit has been removed but the files still exist. We can now perform the co
 Execute the commands:
 
 ```
-`git add file3.txt
-`git commit -m "File 3"
-`git add file4.txt
-`git commit -m "File 4"
+git add file3.txt
+git commit -m "File 3"
+git add file4.txt
+git commit -m "File 4"
 ```
 
 #### Saving
