@@ -30,14 +30,3 @@ Labs for this course are available at path shared below. Elev8ed Notebooks (powe
 		* <host-ip>:<port>/lab/workspaces/lab5
 6. ##### Re-writing History
 		* <host-ip>:<port>/lab/workspaces/lab6
-7. ##### 
-		* <host-ip>:<port>/lab/workspaces/lab7
-8. ##### 
-		* <host-ip>:<port>/lab/workspaces/lab8
-9. ##### 
-		* <host-ip>:<port>/lab/workspaces/lab9
-10. ##### 
-		* <host-ip>:<port>/lab/workspaces/lab10
-11. ##### 
-		* <host-ip>:<port>/lab/workspaces/lab11
-		
