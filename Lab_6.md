@@ -16,6 +16,8 @@ You should only rebase commits that have not been shared with other people via p
 #### Lab Environment
 There is no requirement for any setup.
 
+There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 Run the following command in **terminal**:
 `cd ~/work/git/6/ && mv git .git`
 

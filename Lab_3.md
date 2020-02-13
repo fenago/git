@@ -14,6 +14,8 @@ Let's get started.
 #### Lab Environment
 There is no requirement for any setup.
 
+There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 Run the following command in **terminal**:
 `cd ~/work/git/3/ && mv git .git`
 
@@ -60,6 +62,8 @@ git push origin master
 
 ### Step 3 - Git Pull
 Where git push allows you to push your changes to a remote repository, git pull works in the reverse fashion. git pull allows you to sync changes from a remote repository into your local version.
+
+There should be terminal opened already. You can also open another New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Let's make some change from another folder and push them to remote. Run following remote in **terminal 2**:
 

@@ -12,6 +12,8 @@ In this scenario we'll explore the different ways you can find which commit intr
 #### Lab Environment
 There is no requirement for any setup.
 
+There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 Run the following command in **terminal**:
 `cd ~/work/git/5/ && mv git .git`
 
