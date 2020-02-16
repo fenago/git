@@ -1,6 +1,6 @@
 <img align="right" src="../logo-small.png">
 
-# Lab: 
+# Lab: Patching and Offline Sharing (Part 2)
 
 #### Introduction
 

@@ -1,6 +1,6 @@
 <img align="right" src="../logo-small.png">
 
-# Lab: Git Providers, Integrations, and Clients
+# Lab: Getting Started with GitHub
 In this chapter, we will cover the following recipes:
 
 Setting up an organization at GitHub

@@ -30,3 +30,17 @@ Labs for this course are available at path shared below.
 		* <host-ip>:<port>/lab/workspaces/lab5
 6. ##### Re-writing History
 		* <host-ip>:<port>/lab/workspaces/lab6
+7. ##### Branching, Merging, and Options
+		* <host-ip>:<port>/lab/workspaces/lab7
+8. ##### Storing Additional Information in Your Repository
+		* <host-ip>:<port>/lab/workspaces/lab8
+9. ##### Extracting Data from the Repository
+		* <host-ip>:<port>/lab/workspaces/lab9
+10. ##### Recovering from Mistakes
+		* <host-ip>:<port>/lab/workspaces/lab10
+11. ##### Patching and Offline Sharing (Part 1)
+		* <host-ip>:<port>/lab/workspaces/lab11
+12. ##### Patching and Offline Sharing (Part 2)
+		* <host-ip>:<port>/lab/workspaces/lab12
+13. ##### Getting Started with GitHub
+		* <host-ip>:<port>/lab/workspaces/lab13

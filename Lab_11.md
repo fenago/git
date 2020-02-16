@@ -1,6 +1,6 @@
 <img align="right" src="../logo-small.png">
 
-# Lab: Patching and Offline Sharing
+# Lab: Patching and Offline Sharing (Part 1)
 In this chapter, we will cover the following recipes:
 
 Creating patches
