@@ -132,6 +132,8 @@ nothing to commit, working directory clean
     commits we want to see with `gitk` . In this case, we want
     to see `origin/stable-3.2` and `HEAD` :
 
+**Important:** gitk is a graphical history viewer. It is a powerful GUI shell over git log and git grep. Below command will not in this lab environment, it will work in desktop environemnt e-g windows, ubuntu desktop:
+
 ```
 $ gitk origin/stable-3.2 HEAD
 ```

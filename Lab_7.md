@@ -171,12 +171,12 @@ Switched to a new branch 'lastBugFix'
 ```
 
 3.  Git switches to the new branch immediately after it creates the
-    branch. Verify with `gitk` to see whether the
+    branch. Verify with `git` to see whether the
     `lastBugFix` branch is checked out and another
     `BugFix` branch is at the same commit hash:
 
 ```
-$ gitk
+$ git status
 ```
 
 This can be shown via a screenshot as follows:
