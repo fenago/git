@@ -21,7 +21,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`mkdir -p ~/work/git/9 && cd ~/work/git/9`
+`rm -rf ~/work/tutorial && mkdir -p ~/work/tutorial && cd ~/work/tutorial`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -355,7 +355,7 @@ Date:   Thu Oct 3 17:22:08 2013 +0200
     or higher changes; you can use any number you like here. By default,
     Git does not count the changes in the subdirectories, but only the
     files in the directory. So, in the following diagram, only changes
-    in **File A1**are counted as changes; for the**Dir A1** directory
+    in **File A1** are counted as changes; for the **Dir A1** directory
     and the **File B1** file, it is counted as a change in **Dir A2**:
 
 ![](./images/8f0649be-620c-487f-b9b9-d72f2b7005f7.png)

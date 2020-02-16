@@ -3,9 +3,9 @@
 # Lab: Getting Started with GitHub
 In this lab, we will cover the following recipes:
 
-Setting up an organization at GitHub
-Creating a repository at GitHub
-Adding templates for issues and pull requests
+- Setting up an organization at GitHub
+- Creating a repository at GitHub
+- Adding templates for issues and pull requests
 
 #### Introduction
 It is possible to host your own Git installation and maintain a central server for your organization. If you are a small company or an open source project, maintaining such an infrastructure can be a burden. But today, there exists a number of Git providers who can lift the burden.
@@ -21,7 +21,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`mkdir -p ~/work/git/13 && cd ~/work/git/13`
+`rm -rf ~/work/tutorial && mkdir -p ~/work/tutorial && cd ~/work/tutorial`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -58,9 +58,8 @@ organization. 
 If you don't have a GitHub account, it is time to create one. Once you
 have created your account and signed in, you are ready to go.
 
- 
+Signup: https://github.com/join
 
- 
 
 ### How to do it...
 
@@ -170,6 +169,7 @@ customer.
 $ git clone https://github.com/JohnDoePacktOrg/nomen-nescio.git
 $ cd nomen-nescio
 $ ls -a
+
 .          ..         .git       .gitignore LICENSE    README.md
 ```
 

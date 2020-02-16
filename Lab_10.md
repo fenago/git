@@ -22,7 +22,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`mkdir -p ~/work/git/10 && cd ~/work/git/10`
+`rm -rf ~/work/tutorial && mkdir -p ~/work/tutorial && cd ~/work/tutorial`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -147,7 +147,7 @@ commit we removed, **35b29ae**. This is shown in the following diagram:
 
 ![](https://static.packt-cdn.com/products/9781789137545/graphics/6b79c61b-895f-4b87-b669-78775aec2cce.png)
 
-The preceding diagram also shows that the original **3061dc6**commit is
+The preceding diagram also shows that the original **3061dc6** commit is
 still present in the repository, but new commits on themaster branch
 will start from **9c7532f**; the **3061dc6** commit is called a dangling
 commit.
