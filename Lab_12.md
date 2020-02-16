@@ -16,7 +16,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/12/ && mv git .git`
+`mkdir -p ~/work/git/12 && cd ~/work/git/12`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 

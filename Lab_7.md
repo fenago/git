@@ -24,7 +24,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/12/ && mv git .git`
+`mkdir -p ~/work/git/7 && cd ~/work/git/7`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -98,7 +98,7 @@ Refactoring the Hydro controller
 The hydro controller code is currently horrible needs to be refactored.  
 ```
 
-5.  Close the editor and the message will be saved.
+5.  Press `i` to get into insert mode in Vim. To save and exit press `esc` key then `:wq`. Close the editor and the message will be saved.
 
 ### How it works...
 
@@ -111,14 +111,11 @@ To retrieve the description for the branch, you can use the
 
 ```
 $ git config --get branch.newBugFix.description 
+
 Refactoring the Hydro controller 
 
 The hydro controller code is currently horrible and needs to be refactored.  
 ```
-
-This will be beneficial when we automate some tasks in [Chapter
-7](https://subscription.packtpub.com/book/application_development/9781789137545/7),
-*Enhancing Your Daily Work with Git Hooks*, *Aliases, and Scripts*.
 
 ### Note
 
@@ -171,15 +168,13 @@ Switched to a new branch 'lastBugFix'
 ```
 
 3.  Git switches to the new branch immediately after it creates the
-    branch. Verify with `git` to see whether the
+    branch. The
     `lastBugFix` branch is checked out and another
     `BugFix` branch is at the same commit hash:
 
-```
-$ git status
-```
+**Important:** gitk is a graphical history viewer. It is a powerful GUI shell over git log and git grep. gitk will not work in this lab environment, it will work in desktop environemnt e-g windows, ubuntu desktop:
 
-This can be shown via a screenshot as follows:
+This can be shown via a **gitk** screenshot as follows:
 
 ![](./images/320ad534-cb87-4d5e-af88-a031592fdbf3.png)
 
@@ -533,6 +528,7 @@ $ git reset LICENSE
 
 ```
 $ git commit -m "Merging without LICENSE" 
+
 [remotePartlyMerge f138175] Merging without LICENSE
 ```
 
@@ -558,4 +554,146 @@ If you don't specify `HEAD`, you will `diff` with
 your current `WA`, and the `diff` command will have
 a lot of output as you have unstaged changes.
 
+Orphan branches
+---------------
 
+* * * * *
+
+You are now familiar with Git's data model, the DAG. You have seen that
+objects have a parent. When you create a new branch, the commit is its
+parent. However, in some situations, it is useful to have a branch with
+no parent.
+
+One example would be an instance where you have your code base in two
+separate repositories, but, for some reason, you now want to consolidate
+it into one. One way is to simply copy the files and add them to one of
+the repositories, but the disadvantage is that you will lose the
+histories. The second way is to use an orphan branch that can help you
+to fetch one repository in another.
+
+### Getting ready
+
+It is actually easy to create an orphan branch. The flag
+`--orphan` to `checkout` will do it. It can be
+executed as follows:
+
+```
+$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition.git
+$ cd Git-Version-Control-Cookbook-Second-Edition
+$ git checkout --orphan fresh-start
+Switched to a new branch 'fresh-start'
+```
+
+### How to do it...
+
+1.  We now have a branch with no parent. You can verify it by examining
+    the commit log as follows:
+
+```
+$ git log
+fatal: your current branch 'fresh-start' does not have any commits yet
+```
+
+`Fresh start` does not mean that you are starting from
+scratch. The files and directories that have been added to the
+repository still exist:
+
+```
+$ ls
+README.md a_sub_directory another-file.txt cat-me.txt hello_world.c
+$ git status
+On branch fresh-start
+
+No commits yet
+
+Changes to be committed:
+ (use "git rm --cached <file>..." to unstage)
+
+ new file: README.md
+ new file: a_sub_directory/readme
+ new file: another-file.txt
+ new file: cat-me.txt
+ new file: hello_world.c
+```
+
+2.  If you need a fresh start, you can delete the files (but remember
+    not to delete `.git`) as follows:
+
+```
+$ git rm --cached README.md a_sub_directory/readme another-file.txt cat-me.txt hello_world.c
+$ rm -rf README.md a_sub_directory another-file.txt cat-me.txt hello_world.c
+$ git status
+On branch fresh-start
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+
+3.  You have a branch with no files and no commits. Moreover, the branch
+    does not share any commit history with your `master` 
+    branch. You could add another repository and fetch all its commits
+    using `git remote add` and `git fetch` . Instead,
+    we will simply add a text file to illustrate it as follows:
+
+```
+$ echo "This is from an orphan branch." > orphan.txt
+$ git add orphan.txt
+$ git commit  -m "Orphan"
+```
+
+Commit is the only thing in the history that you can verify with the
+command `git log` . If you fetch another repository into the
+branch, you will see all the commits and, more importantly you will have
+a copy of the repository's history. 
+
+4.  Once you have your commits in place on the orphan branch, it is time
+    to merge them into your master branch. However, your first attempt
+    will fail. For example, check the following:
+
+```
+$ git checkout master
+$ git merge fresh-start
+fatal: refusing to merge unrelated histories
+```
+
+5.  As you can see, the orphan branch does not share history with the
+    master branch, and git will not allow you to merge the branch. It
+    shouldn't come as a surprise, since it is basically what an orphan
+    branch is all about. However, you can still merge an orphan branch
+    by allowing unrelated histories to be merged:
+
+```
+$ git merge fresh-start --allow-unrelated-histories
+$ git log -3
+commit aa804347c728552f7ce9298a83ab646148078dab (HEAD -> master)
+Merge: 13dcada 45d1798
+Author: John Doe <john.doe@example.com>
+Date: Fri May 11 08:57:45 2018 +0200
+
+Merge branch 'fresh-start'
+
+commit 45d179838f8f9f8fd64c6c7bf96147e09ceadbc2 (fresh-start)
+Author: John Doe <john.doe@example.com>
+Date: Fri May 11 08:57:22 2018 +0200
+
+Orphan
+
+commit 13dcada077e446d3a05ea9cdbc8ecc261a94e42d (origin/master, origin/HEAD)
+Author: John Doe <john.doe@example.com>
+Date: Fri Dec 13 12:26:00 2013 +0100
+
+This is the subject line of the commit message
+
+... and more output
+```
+
+It is unlikely that you will use orphan branches on a daily basis, but
+it is a strong feature to know when you need to reorganize your code
+base.
+
+### There's more...
+
+There are more options in the help files for Git. Just run
+`git merge --help` or `git branch --help` to see
+what other options are available. 

@@ -21,7 +21,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/12/ && mv git .git`
+`mkdir -p ~/work/git/13 && cd ~/work/git/13`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -242,12 +242,7 @@ can fluently move between repositories. 
 Adding templates for issues and pull requests
 ---------------------------------------------
 
-* * * * *
-
-In [Chapter
-7](https://subscription.packtpub.com/book/application_development/9781789137545/7),
-*Enhancing Your Daily Work with Git Hooks, Aliases, and Scripts*, we
-showed how to add templates for commits.  A commit template helps the
+A commit template helps the
 developer to include the relevant information in the commit message. At
 GitHub, users will create issues and pull requests. It is up to the
 issue or pull request creator to write a meaningful description.

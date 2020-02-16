@@ -22,7 +22,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/12/ && mv git .git`
+`mkdir -p ~/work/git/10 && cd ~/work/git/10`
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -46,16 +46,16 @@ discard the commit and thereby reset our branch to the desired state.
 ### Getting ready
 
 In this example, we'll use the example of the
-`Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook`  repository,
+`Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook` repository,
 clone the repository, and change our working directory to the cloned
 one:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-
+$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git 
 ```
 
 ```
-Edition_hello_world_cookbook.git 
+
 $ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git
 ```
 
@@ -407,11 +407,7 @@ current state of your working directory with
 and you want to keep them, you can stash them away before undoing the
 commit and retrieve them afterward. Git provides a stash command that
 can put unfinished changes away, so it is easy to make quick context
-switches without losing work. The stash functionality is described
-further in [Chapter
-11](https://subscription.packtpub.com/book/application_development/9781789137545/11),
-*Tips and Tricks*. For now, you can think of thestash command as a stack
-where you can put your changes and pop them later.
+switches without losing work.
 
 With the `hello_world.c` file in the working directory
 modified to the preceding state, we can try to do a hard reset on the
@@ -568,11 +564,7 @@ current state of your working directory with
 and you want to keep them, you can stash them away before undoing the
 commit and retrieve them afterward. Git provides a stash command that
 can put unfinished changes away, so it is easy to make quick context
-switches without losing work. The stash functionality is described
-further in [Chapter
-11](https://subscription.packtpub.com/book/application_development/9781789137545/11),
-*Tips and Tricks*. For now, you can think of thestash command as a stack
-where you can put your changes and pop them later.
+switches without losing work.
 
 With the `hello_world.c` file in the working directory
 modified to the preceding state, we can try to do a hard reset on the
@@ -775,10 +767,7 @@ Date: Sun Mar 9 14:12:45 2014 +0100  Adds Java version of 'hello world'  Also in
 4.  We can see that the commit message has changed, but we can't verify
     from the log output that the parent of the commit is the same as in
     the original commit, and so on, as we saw in the first commit we
-    did. To check this, we can use the `git cat-file` command
-    we learned about in [Chapter
-    1](https://subscription.packtpub.com/book/application_development/9781789137545/1),
-    *Navigating Git*. First, let's see how the original commit looked:
+    did. To check this, we can use the `git cat-file` command. First, let's see how the original commit looked:
 
 ```
 $ git cat-file -p 3061dc6 
