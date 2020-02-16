@@ -358,7 +358,7 @@ Date:   Thu Oct 3 17:22:08 2013 +0200
     in **File A1**are counted as changes; for the**Dir A1** directory
     and the **File B1** file, it is counted as a change in **Dir A2**:
 
-![](./9-2_files/8f0649be-620c-487f-b9b9-d72f2b7005f7.png)
+![](./images/8f0649be-620c-487f-b9b9-d72f2b7005f7.png)
 
 5.  To cumulate this, we can add `cumulative` to the
     `--dirstat=lines,10` command, and this will cumulate the

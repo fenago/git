@@ -181,7 +181,7 @@ $ git status
 
 This can be shown via a screenshot as follows:
 
-![](./7-0_files/320ad534-cb87-4d5e-af88-a031592fdbf3.png)
+![](./images/320ad534-cb87-4d5e-af88-a031592fdbf3.png)
 
 4.  Instead of using Gitk, you can also add `-v` to the
     `git branch`command or even another `-v` 

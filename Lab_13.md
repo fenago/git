@@ -150,7 +150,7 @@ customer.
     It's a dropdown with the title **`Switch dashboard context`**. Once
     you have switched context, your screen will look like this:
 
-![](./2_files/569e944c-8c76-41ca-9f96-339609af856b.png)
+![](./images/569e944c-8c76-41ca-9f96-339609af856b.png)
 
 2.  Now, you are ready to create the repository. You will have to set
     the name, a **`Description (optional)`**, and decide whether the
@@ -161,7 +161,7 @@ customer.
     practices can be generated. In the following screenshot, you can see
     all the fields with values:
 
-![](./2_files/3f5e2caf-8442-4d99-b173-7048a8c55ca5.png)
+![](./images/3f5e2caf-8442-4d99-b173-7048a8c55ca5.png)
 
 3.  Once the repository is created, you can clone it on your computer as
     follows:
@@ -220,7 +220,7 @@ You can now go to GitHub, find your repository and create a pull
 request. You can invite your collaborators to review your changes before
 they are merged, as shown in the following screenshot:
 
-![](./2_files/b42383cb-46be-44ba-a8ec-035803804d90.png)
+![](./images/b42383cb-46be-44ba-a8ec-035803804d90.png)
 
 When we created the repository, we had the option to create it as a
 private one. Private repositories are only available for paying
@@ -274,14 +274,14 @@ and so on. Going through Markdown might be a complete book on its own.
     looking for. You can choose to use one of the precanned templates,
     but we will create a custom one, as shown in the next screenshot:
 
-![](./3_files/27ee9039-a9ad-4185-93b6-67ecb3622b9b.png)
+![](./images/27ee9039-a9ad-4185-93b6-67ecb3622b9b.png)
 
 2.  You save the template by clicking on **`Commit changes`**. When a
     user is creating an issue, your template will be shown. The user can
     choose to delete all your text but most users will read it before
     doing so; note the following screenshot:
 
-![](./3_files/28428afa-7109-49ce-ae7a-42ee1c83f077.png)
+![](./images/28428afa-7109-49ce-ae7a-42ee1c83f077.png)
 
  
 

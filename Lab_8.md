@@ -139,7 +139,7 @@ $ gitk origin/stable-3.2 HEAD
 
 The following is the screenshot for this:
 
-![](./1_files/24c7e484-7afb-464e-96de-168bdd3c51a7.png)
+![](./images/24c7e484-7afb-464e-96de-168bdd3c51a7.png)
 
 7.  To prevent this result, we can add a note to the commit message.
     Let's start by resetting the branch to `origin/stable-3.2` 
