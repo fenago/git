@@ -1,4 +1,4 @@
-<img align="right" src="../logo-small.png">
+<img align="right" src="./logo-small.png">
 
 # Lab: Finding Bugs
 Software bugs have been a problem for as long as software has existed. As Git records all the commits to the repository then it becomes a great source of information and diagnostic tool when identifying how issues were introduced.

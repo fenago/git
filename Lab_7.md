@@ -1,4 +1,4 @@
-<img align="right" src="../logo-small.png">
+<img align="right" src="./logo-small.png">
 
 # Lab: Branching, Merging, and Options
 In this lab, we will cover the following recipes:
@@ -28,7 +28,7 @@ Run the following command in **terminal**:
 
 **Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-![](../sample.png)
+![](./sample.png)
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/lab7`
 

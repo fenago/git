@@ -1,4 +1,4 @@
-<img align="right" src="../logo-small.png">
+<img align="right" src="./logo-small.png">
 
 # Lab:  Undoing Changes
 One of the main advantages when using a version control system is the ability to undo changes and return to a previous version. Git provides powerful approaches and control over managing your repository and it's history which we'll explore in this scenario.

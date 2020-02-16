@@ -1,4 +1,4 @@
-<img align="right" src="../logo-small.png">
+<img align="right" src="./logo-small.png">
 
 # Lab: Re-writing History
 An important aspect of Git is how clean you keep your repository and history. A clean repository is easier to work with and understand what's happened.
