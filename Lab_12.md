@@ -174,7 +174,7 @@ files or folders you might have in your working directory.
 ### Getting ready
 
 We'll use the same `offline-sharing` repository as was used in
-the previous examples in this chapter:
+the previous examples in this lab:
 
 ```
 $ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_offline-sharing.git
@@ -321,7 +321,7 @@ files or folders you might have in your working directory.
 ### Getting ready
 
 We'll use the same `offline-sharing` repository as was used in
-the previous examples in this chapter:
+the previous examples in this lab:
 
 ```
 $ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_offline-sharing.git

@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 # Lab: Branching, Merging, and Options
-In this chapter, we will cover the following recipes:
+In this lab, we will cover the following recipes:
 
 Managing your local branches
 Branches with remotes
@@ -15,7 +15,7 @@ If you are developing a small application in a big corporation as a developer, o
 
 Most of the time, you may have just been working on a local development or master branch, and so didn't care so much about other branches.
 
-In this chapter, we will show you different branch types and how to work with them.
+In this lab, we will show you different branch types and how to work with them.
 
 #### Pre-reqs:
 - Google Chrome (Recommended)

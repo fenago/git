@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 # Lab: Recovering from Mistakes
-In this chapter, we will cover the following recipes:
+In this lab, we will cover the following recipes:
 
 Undo – Remove a commit completely
 Undo – Remove a commit and retain changes to files
@@ -129,7 +129,7 @@ hello_world.c
 
 In the last output of the `git status` command, you can see
 that our master branch is one behind `origin/master` . This is
-similar to what we mentioned at the beginning of the chapter, because we
+similar to what we mentioned at the beginning of the lab, because we
 are removing and undoing commits that are already published. Also, as
 mentioned, you should only perform the undo and redo
 (`git reset`) operations on commits that are not shared yet.

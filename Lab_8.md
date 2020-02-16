@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 # Lab: Storing Additional Information in Your Repository
-In this chapter, we will cover the following recipes:
+In this lab, we will cover the following recipes:
 
 Adding your first Git note
 Separating notes by category
@@ -288,7 +288,7 @@ As we saw in the previous example, we can add notes to the commits;
 however, in some cases, it makes sense to store the information sorted
 by categories, such as `featureImplemented`,
 `defect`, and `alsoCherryPick` . As briefly explained
-at the beginning of the chapter, notes are stored in
+at the beginning of the lab, notes are stored in
 `refs/notes/commits`, but we can add multiple references so
 that we can easily sort and list the various scopes of the notes.
 

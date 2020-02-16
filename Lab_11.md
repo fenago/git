@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 # Lab: Patching and Offline Sharing (Part 1)
-In this chapter, we will cover the following recipes:
+In this lab, we will cover the following recipes:
 
 Creating patches
 Creating patches from branches
@@ -562,7 +562,7 @@ Before sending the patches, the cover letter is filled out and, by
 default, has `[PATCH 0/3] ` (if sending three patches) in the
 subject line. A cover letter with only the default template subject and
 body won't be sent as default. In the scripts that come with this
-chapter, the `git send-email` command invokes the
+lab, the `git send-email` command invokes the
 `--force` and `--confirm=never` options. This was
 done for script automation to force Git to send the mails even though
 the cover letter has not been changed from the default. You can try to

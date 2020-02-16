@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 # Lab: Extracting Data from the Repository
-In this chapter, we will cover the following recipes:
+In this lab, we will cover the following recipes:
 
 Extracting the top contributor
 Finding bottlenecks in the source tree
@@ -840,7 +840,7 @@ Date: Thu Apr 12 10:53:29 2018 +0900
 
 Here, we use `--all` in order to see the commits in all the
 branches and not only the current one. We also use `--since` 
-as illustrated previously during this chapter.
+as illustrated previously during this lab.
 
 2.  Now, let's only show the commits by `David Pursehouse` :
 
