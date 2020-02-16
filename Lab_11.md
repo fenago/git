@@ -3,13 +3,10 @@
 # Lab: Patching and Offline Sharing (Part 1)
 In this lab, we will cover the following recipes:
 
-Creating patches
-Creating patches from branches
-Applying patches
-Sending patches
-Creating Git bundles
-Using a Git bundle
-Creating archives from a tree
+- Creating patches
+- Creating patches from branches
+- Applying patches
+- Sending patches
 
 #### Introduction
 With the distributed nature of Git and the many existing hosting options available for it, it's very easy to share history between machines when they are connected through a network. In cases where the machines that need to share history are not connected or can't use the supported transport mechanisms, Git provides other methods to share history.
@@ -29,7 +26,9 @@ There should be terminal opened already. You can also open New terminal by Click
 Run the following command in **terminal**:
 `cd ~/work/git/12/ && mv git .git`
 
-**Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+**Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+![](../sample.png)
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/lab11`
 

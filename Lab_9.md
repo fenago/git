@@ -3,11 +3,9 @@
 # Lab: Extracting Data from the Repository
 In this lab, we will cover the following recipes:
 
-Extracting the top contributor
-Finding bottlenecks in the source tree
-Grepping the commit messages
-The contents of the releases
-Finding what has been achieved in the repository in the last period
+- Extracting the top contributor
+- Finding bottlenecks in the source tree
+- Grepping the commit messages
 
 #### Introduction
 Whether you work in big or small organizations, safeguarding and maintaining data is always important and it keeps track of a fair amount of information for you; it is just a matter of extracting the data. Some of the data is included in the system by you or any other developer when the commit message is filled in with the proper information – for instance, details of the bug you are fixing from the bug tracking system.
@@ -25,7 +23,9 @@ There should be terminal opened already. You can also open New terminal by Click
 Run the following command in **terminal**:
 `cd ~/work/git/12/ && mv git .git`
 
-**Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+**Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+![](../sample.png)
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/lab9`
 

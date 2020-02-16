@@ -3,12 +3,10 @@
 # Lab: Branching, Merging, and Options
 In this lab, we will cover the following recipes:
 
-Managing your local branches
-Branches with remotes
-Forcing a merge commit
-Using git reuse recorded resolution (rerere) to merge Git conflicts
-Computing the difference between branches
-Orphan branches
+- Managing your local branches
+- Branches with remotes
+- Forcing a merge commit
+- Orphan branches
 
 #### Introduction
 If you are developing a small application in a big corporation as a developer, or you are trying to wrap your head around an open source project from GitHub, you have already been using branches with Git.
@@ -28,7 +26,9 @@ There should be terminal opened already. You can also open New terminal by Click
 Run the following command in **terminal**:
 `cd ~/work/git/12/ && mv git .git`
 
-**Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+**Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+![](../sample.png)
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/lab7`
 

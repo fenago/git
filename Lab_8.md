@@ -3,11 +3,8 @@
 # Lab: Storing Additional Information in Your Repository
 In this lab, we will cover the following recipes:
 
-Adding your first Git note
-Separating notes by category
-Retrieving notes from the remote repository
-Pushing Git notes to a remote repository
-Tagging commits in the repository
+- Adding your first Git note
+- Separating notes by category
 
 #### Tutorial Overview
 
@@ -25,7 +22,9 @@ There should be terminal opened already. You can also open New terminal by Click
 Run the following command in **terminal**:
 `cd ~/work/git/12/ && mv git .git`
 
-**Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+**Important:** Instructions for this lab are written in such a way that it also shows expected output from the git cli. Only run commands that start with **$** as shown below.  To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+![](../sample.png)
 
 You can access lab at `<host-ip>:<port>/lab/workspaces/lab6`
 
