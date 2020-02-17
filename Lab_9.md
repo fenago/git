@@ -499,8 +499,7 @@ $ git log origin/stable-3.1..origin/stable-3.2 --format=format: --name-only | se
     follows:
 
 ```
-$ git log origin/stable-3.1..origin/stable-3.2 \\
-  org.eclipse.jgit/src/org/eclipse/jgit/api/RebaseCommand.java 
+$ git log origin/stable-3.1..origin/stable-3.2 org.eclipse.jgit/src/org/eclipse/jgit/api/RebaseCommand.java 
 
 commit e90438c0e867bd105334b75df3a6d640ef8dab01 
 Author: Stefan Lay <stefan.lay@sap.com> 
@@ -878,6 +877,7 @@ subshell to retrieve the information automatically:
 
 ```
 $ git log --all --since="30 days ago" --oneline --author="David Pursehouse" --no-merges
+
 3d89622d4 Add API filter for "non-API type FileRepository" in tests
 9fb724f1b RefDatabase: add hasRefs convenience method
 4dcf2f93d RefDatabase: Introduce getAllRefs method
