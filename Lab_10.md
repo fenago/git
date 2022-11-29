@@ -46,17 +46,17 @@ discard the commit and thereby reset our branch to the desired state.
 ### Getting ready
 
 In this example, we'll use the example of the
-`Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook` repository,
+`github_helloworld` repository,
 clone the repository, and change our working directory to the cloned
 one:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git 
+$ git clone https://github.com/fenago/github_helloworld.git 
 ```
 
 ```
 
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git
+$ cd github_helloworld.git
 ```
 
 ### How to do it...
@@ -182,8 +182,8 @@ cloned one.
 You can make a fresh clone as follows:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git 
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git clone https://github.com/fenago/github_helloworld.git 
+$ cd github_helloworld
 ```
 
 You can reset the existing clone as follows:
@@ -278,8 +278,8 @@ cloned one.
 Create a fresh clone as follows:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git clone https://github.com/fenago/github_helloworld.git
+$ cd github_helloworld
 ```
 
 We can reset the existing clone as follows:
@@ -369,8 +369,8 @@ cloned one.
 We can create the fresh clone as follows:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git clone https://github.com/fenago/github_helloworld.git
+$ cd github_helloworld
 ```
 
 We can reset the existing clone as follows:
@@ -526,8 +526,8 @@ cloned one.
 We can create the fresh clone as follows:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git clone https://github.com/fenago/github_helloworld.git
+$ cd github_helloworld
 ```
 
 We can reset the existing clone as follows:
@@ -684,8 +684,8 @@ repository, or reset themaster branch if you have already cloned one.
 We can create a fresh clone as follows:
 
 ```
-$ git https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git 
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git https://github.com/fenago/github_helloworld.git 
+$ cd github_helloworld
 ```
 
 We can reset an existing clone as follows:
@@ -895,14 +895,14 @@ repository, or reset themaster branch if you have already cloned one.
 We can create a fresh clone as follows:
 
 ```
-$ git clone https://github.com/PacktPublishing/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook.git 
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ git clone https://github.com/fenago/github_helloworld.git 
+$ cd github_helloworld
 ```
 
 We can reset the existing clone as follows:
 
 ```
-$ cd Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook
+$ cd github_helloworld
 $ git checkout master 
 $ git reset --hard origin/master 
 HEAD is now at 3061dc6 Adds Java version of 'hello world'
@@ -938,7 +938,7 @@ This reverts commit 9c7532f5e788b8805ffd419fcf2a071c78493b23.
 ~ 
 ~ 
 ~ 
-"~/john.doe/packt/repos/Git-Version-Control-Cookbook-Second-Edition_hello_world_cookbook/.git/COMMIT_EDITMSG" 12L, 359C [master 9b94515] Revert "Fixes compiler warnings"  1 file changed, 1 insertion(+), 5 deletions(-)
+"~/john.doe/fenago/repos/github_helloworld/.git/COMMIT_EDITMSG" 12L, 359C [master 9b94515] Revert "Fixes compiler warnings"  1 file changed, 1 insertion(+), 5 deletions(-)
 ```
 
 3.  When we check the log, we can see that a new commit has been made:
